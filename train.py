@@ -18,7 +18,7 @@ from ultralytics import YOLO
 def parse_args():
     p = argparse.ArgumentParser(description="Train YOLO on aerial imagery")
     p.add_argument("--data", default="data.yaml", help="dataset config (YOLO format)")
-    p.add_argument("--model", default="yolo11s.pt", help="pretrained weights to start from")
+    p.add_argument("--model", default="yolo11s-seg.pt", help="pretrained weights to start from")
     p.add_argument("--epochs", type=int, default=100)
     p.add_argument("--imgsz", type=int, default=640)
     p.add_argument("--batch", type=int, default=16)
